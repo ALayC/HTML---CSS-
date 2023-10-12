@@ -1,0 +1,486 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header {
+  background-color: #96979b6c;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header figure {
+  margin: 0;
+  text-align: center;
+}
+
+header figure img {
+  display: block;
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+header nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #ACB1D6;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a:hover {
+  background-color: #FFFF00;
+}
+
+nav ul li,
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 3px;
+  text-align: center;
+  font-size: 16px;
+}
+
+nav ul li {
+  background-color: aqua;
+  margin-bottom: 1px;
+  display: inline-block;
+  width: 150px;
+}
+
+
+
+
+/* imagen de fondo  */
+#ParasiteImagenFondo {
+  height: 400px;
+  background-image: url("../img/parasite.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ParasiteImagenFondo h1 {
+  font-size: 110px;
+  margin: 0;
+  padding: 0;
+  color: #8294C4;
+  text-shadow: 0 0 10px #FFFF00;
+}
+
+
+
+
+/* ACTORES  */
+#Actores {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #96979b6c;
+  padding-top: 40px;
+}
+
+#Actores article {
+  flex: 0 0 calc(23% - 5px);
+  max-width: 278px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 3px;
+  background-color: #ACB1D6;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+
+
+
+#Actores h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 100%;
+  text-align: center;
+}
+
+
+
+#Actores article figure {
+  margin-right: 10px;
+}
+
+#Actores article h2,
+#Actores article h3 {
+  margin: 0;
+}
+
+#Actores article figure img {
+  border-radius: 50%;
+}
+
+#Actores article p:first-of-type::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+  margin: 5px 0;
+}
+
+#Actores article:first-child {
+  display: none;
+}
+
+
+/* ESCENAS */
+#Escenas {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+}
+
+#Escenas article {
+  display: grid;
+  grid-template-columns: repeat(19, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  width: 1200px;
+
+  
+}
+
+#Escenas figure {
+  margin: 0;
+}
+
+#Escenas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#Escenas h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+#Escenas figure:nth-of-type(1) {
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 2;
+}
+
+#Escenas figure:nth-of-type(2) {
+  grid-column: 6 / span 4;
+  grid-row: 1 / span 1;
+}
+
+#Escenas figure:nth-of-type(3) {
+  grid-column: 10 / span 11;
+  grid-row:  1 / span 1;
+}
+
+#Escenas figure:nth-of-type(4) {
+  grid-column: 6 / span 8;
+  grid-row: 2 / span 1;
+}
+
+#Escenas figure:nth-of-type(5) {
+  grid-column: 14 / span 7;
+  grid-row: 2 / span 1;
+}
+
+
+/* TRAMA  */
+#Trama {
+  position: relative;
+  background-color: #96979b6c;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 40px 10px;
+}
+#Trama article {
+  flex: 0 0 calc((1200px - 80px) / 3); 
+  border: 1px solid #070707;
+  background-color: #ACB1D6;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  height: 450px;
+}
+
+#Trama article figure {
+
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+#Trama article figure img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#Trama h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 100%;
+  text-align: center;
+}
+
+#Trama article h3,
+#Trama article h4 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.ver-mas {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid black;
+  text-align: left;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.ver-mas:hover {
+  background-color: white;
+  color: black;
+}
+
+/* SECCION DE COMENTARIOS */
+
+#Comentarios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151b3517;
+  padding: 40px 10px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center; /* Centrar elementos horizontalmente */
+  align-items: start; /* Alineación vertical al inicio */
+  flex-wrap: wrap; /* Permitir el desplazamiento de los elementos si no caben en una línea */
+  gap: 20px; /* Espacio entre elementos */
+}
+
+.tabla-container {
+  width: 100%;
+  margin-right: 10px; /* Margen a la derecha */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+form {
+  background-color: rgba(122, 118, 118, 0.185);
+  text-align: left;
+  margin-top: 100px;
+  border: 1px solid black;
+  padding: 10px;
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto auto auto auto; 
+  grid-gap: 20px; 
+}
+.tabla-container,
+form {
+  flex: 1 0 600px; /* Cada uno puede crecer, no encoger, y su base es 600px */
+  max-width: 600px; /* Ancho máximo */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr:nth-child(odd) {
+  background-color: darkgray;
+}
+
+select {
+  width: 100%;
+}
+
+
+/* FORMULARIO */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.field-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Para que el contenedor de campo ocupe todo el ancho del formulario */
+  align-items: center; /* Para la alineación vertical de los fieldsets */
+}
+
+.field-container > fieldset {
+  flex: 1; /* Para que los campos tomen el máximo espacio disponible */
+  border: none; /* Para eliminar el borde del fieldset */
+  margin: 0 10px; /* Para proporcionar un pequeño margen entre los fieldsets */
+}
+
+fieldset {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 0; /* Para eliminar cualquier padding que pueda interferir con la alineación */
+  border: none; /* Para eliminar el borde del fieldset */
+  width: 100%; /* Para que ocupe todo el ancho */
+}
+
+legend {
+  color: grey;
+  padding: 0 15px;
+}
+
+legend.email-legend {
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: left;
+  border: none;
+}
+
+h3 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 14px;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+button.full-width {
+  background-color: rgba(5, 4, 4, 0.836);
+  color: white;
+  padding: 5px 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button.full-width:hover {
+  background-color: rgb(20, 5, 107);
+}
+
+/* Footer */
+footer {
+  padding: 15px 0; 
+  text-align: center;
+  background-color: #ACB1D6;
+}
+
+footer ul {
+  width: fit-content; 
+  white-space: nowrap; /* Evitar el salto de línea */
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0; /* Eliminar el padding para las imágenes */
+}
+
+footer ul li {
+  display: inline-block; /* Cambiar a "inline-block" para alinear horizontalmente */
+  margin-right: 10px; 
+  background-color: #ACB1D6;
+}
+
+/* Estilos adicionales */
+.ver-mas {
+  cursor: pointer;
+}
+
+.ver-mas:hover {
+  background-color: white;
+  color: black;
+}
+
+.ver-mas:focus {
+  outline: none;
+}
+
+.ver-mas:active {
+  transform: scale(0.98);
+}
